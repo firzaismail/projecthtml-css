@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Product Landing Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav ul li:hover {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #e4f1f7;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #2b2b2b;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff5733;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .feature-item {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-item h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2b2b2b;
+        }
+
+        .feature-item p {
+            color: #777;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonial-item {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        .testimonial-item p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-item h3 {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            color: #2b2b2b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff7f50;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Westmire Wired</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Westmire A56 Headset </h1>
+            <p> Premium Comfort and Immersive Sound</p>
+            <button class="cta-btn">Buy Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="download.jpg" alt="Product Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-item">
+            <h2>High-Definition Sound</h2>
+            <p>Equipped with advanced audio drivers, the Westmire A56 delivers crisp highs, rich mid-tones, and deep bass, providing an immersive sound experience perfect for music, movies, and games.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Noise-Cancelling Microphone</h2>
+            <p>The detachable microphone effectively reduces background noise, ensuring clear communication whether you're in a busy workspace or gaming environment.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Comfort-Focused Design: </h2>
+            <p>Lightweight and ergonomically crafted, the headset’s adjustable headband and breathable ear pads allow for extended wear without discomfort.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonial-item">
+            <p>"This product changed my life! The quality is amazing, and I highly recommend it to anyone looking for a reliable solution."</p>
+            <h3>- Satisfied Customer</h3>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 MyProduct. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
